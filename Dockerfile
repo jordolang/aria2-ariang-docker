@@ -6,17 +6,17 @@ ARG VCS_REF
 
 ENV ARIA2RPCPORT=8080
 
-LABEL maintainer="hurlenko" \
+LABEL maintainer="jordolang" \
     org.label-schema.build-date=$BUILD_DATE \
     org.label-schema.name="aria2-ariang" \
     org.label-schema.description="Aria2 downloader and AriaNg webui Docker image based on Alpine Linux" \
     org.label-schema.version=$ARIANG_VERSION \
-    org.label-schema.url="https://github.com/hurlenko/aria2-ariang-docker" \
+    org.label-schema.url="https://github.com/jordolang/aria2-ariang-docker" \
     org.label-schema.license="MIT" \
     org.label-schema.vcs-ref=$VCS_REF \
-    org.label-schema.vcs-url="https://github.com/hurlenko/aria2-ariang-docker" \
+    org.label-schema.vcs-url="https://github.com/jordolang/aria2-ariang-docker" \
     org.label-schema.vcs-type="Git" \
-    org.label-schema.vendor="hurlenko" \
+    org.label-schema.vendor="jordolang" \
     org.label-schema.schema-version="1.0"
 
 RUN apk update \
