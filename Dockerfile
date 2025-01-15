@@ -25,9 +25,9 @@ RUN apk update \
 # AriaNG
 WORKDIR /usr/local/www/ariang
 
-RUN curl -L https://github.com/mayswind/AriaNg/releases/download/1.3.8/AriaNg-1.3.8-AllInOne.zip -o ariang.zip \
-    && unzip ariang.zip \
-    && rm ariang.zip \
+RUN curl -L https://github.com/mayswind/AriaNg/releases/download/1.3.8/AriaNg-1.3.8.zip \
+    && unzip AriaNg-1.3.8.zip \
+    && rm AriaNg-1.3.8.zip \
     && chmod -R 755 ./
 
 WORKDIR /aria2
