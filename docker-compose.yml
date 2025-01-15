@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  ariang:
+    image: jordolang/aria2-ariang
+    ports:
+      - 455:8080
+    volumes:
+      - /DOWNLOAD_DIR:/aria2/data
+      - /CONFIG_DIR:/aria2/conf
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - RPC_SECRET=E5C85C529D85EA4BDBBB5BFB72CFA
+      - ARIA2RPCPORT=455
+    restart: always
