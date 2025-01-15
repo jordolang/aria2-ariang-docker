@@ -25,8 +25,7 @@ RUN apk update \
 # AriaNG
 WORKDIR /usr/local/www/ariang
 
-RUN wget --no-check-certificate https://github.com/mayswind/AriaNg/releases/download/1.3.8/AriaNg-1.3.8-AllInOne.zip \
-    -O ariang.zip \
+RUN curl -L https://github.com/mayswind/AriaNg/releases/download/1.3.8/AriaNg-1.3.8-AllInOne.zip -o ariang.zip \
     && unzip ariang.zip \
     && rm ariang.zip \
     && chmod -R 755 ./
